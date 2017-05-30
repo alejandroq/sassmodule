@@ -32,7 +32,7 @@
 }
 
 @mixin success() {
-    // background:green;
-    // color:white;
-    @include fail;
+    background:green;
+    color:white;
+    // @include fail;
 }
