@@ -3,7 +3,7 @@
 
 @mixin counter ($size : $incrementor-size, $color : $incrementor-color) {
   background:   $color;
-    color:      color-contrast($color);
+    color:      color-contrast-function($color);
     width:      $size;
     height:     $size;
     padding:    $size;
