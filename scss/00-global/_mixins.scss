@@ -35,3 +35,13 @@
     background:red;
     color:black;
 }
+
+@mixin counter ($size, $color) {
+  background:   $color;
+    color:      color-contrast($color);
+    width:      $size;
+    height:     $size;
+    padding:    $size;
+    @include    inline();
+    @include    circle();
+}
