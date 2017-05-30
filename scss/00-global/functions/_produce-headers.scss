@@ -4,10 +4,10 @@
     $base-size : $base-font-size;
 
     $modular-scale : 0.5;
-    @each $type in $types{
-    #{$type} {
-        font-size : $base-size * $modular-scale;
-        $modular-scale : $modular-scale + 1;
+    @each $type in $types {
+        #{$type} {
+            font-size : $base-size * $modular-scale;
+            $modular-scale : $modular-scale + 1;
+        }
     }
-}
 }

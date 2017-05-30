@@ -1,4 +1,16 @@
 @import '../../00-global/variables';
-@import '../../00-global/functions';
+// @import '../../00-global/functions';
 
-produce-headers($font-size);
+// produce-headers($font-size);
+
+$types : h6 h5 h4 h3 h2 h1;
+    $base-size : $base-font-size;
+
+    $modular-scale : 0.5;
+    @each $type in $types {
+        #{$type} {
+            font-size : $base-size * $modular-scale;
+            $modular-scale : $modular-scale + 1;
+        }
+    }
+    
