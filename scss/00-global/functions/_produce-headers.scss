@@ -1,12 +1,13 @@
 // create headers
 @function produce-headers($base-font-size) {
-    // h6 starts at $base-font-size 
-    // headings grow from h6 to h1 by $heading-scale
-    $heading-scale: 8; // amount of px headings grow from h6 to h1
+    $types : h6 h5 h4 h3 h2 h1;
+    $base-size : $base-font-size;
 
-    @for $i from 1 through 6 {
-      h#{$i} {
-        font-size: $base-font-size + $heading-scale * (6 - $i);
-      }
+    $modular-scale : 0.5;
+    @each $type in $types{
+    #{$type} {
+        font-size : $base-size * $modular-scale;
+        $modular-scale : $modular-scale + 1;
     }
+}
 }
