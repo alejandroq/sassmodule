@@ -1,5 +1,5 @@
 @import '../../00-global/functions';
-@import './variables'
+@import './variables';
 
 @mixin counter ($size, $color) {
   background:   $color;
