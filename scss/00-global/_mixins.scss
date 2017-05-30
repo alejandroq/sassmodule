@@ -26,22 +26,13 @@
   color: color-contrast-function($header);
 }
 
-@mixin success() {
-    background:green;
-    color:white;
-}
-
 @mixin fail() {
     background:red;
     color:black;
 }
 
-@mixin counter ($size, $color) {
-  background:   $color;
-    color:      color-contrast($color);
-    width:      $size;
-    height:     $size;
-    padding:    $size;
-    @include    inline();
-    @include    circle();
+@mixin success() {
+    // background:green;
+    // color:white;
+    @include fail;
 }

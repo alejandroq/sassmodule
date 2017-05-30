@@ -1,12 +1,1 @@
-@import '../../00-global/functions';
-@import './variables'; 
-
-@mixin counter ($size : $incrementor-size, $color : $incrementor-color) {
-  background:   $color;
-    color:      color-contrast-function($color);
-    width:      $size;
-    height:     $size;
-    padding:    $size;
-    @include    inline();
-    @include    circle();
-}
+@import './mixin';
