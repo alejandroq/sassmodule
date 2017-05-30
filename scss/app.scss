@@ -1,9 +1,3 @@
-@mixin success() {
-    background:green;
-    color:white;
-}
-
-@mixin fail() {
-    background:red;
-    color:black;
-}
+@import './00-global/mixins';
+@import './00-atoms/fonts/paragraph'
+@import './00-atoms/fonts/headers'
