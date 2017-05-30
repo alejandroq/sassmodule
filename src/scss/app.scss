@@ -1,0 +1,9 @@
+@mixin success() {
+    background:green;
+    color:white;
+}
+
+@mixin fail() {
+    background:red;
+    color:black;
+}
